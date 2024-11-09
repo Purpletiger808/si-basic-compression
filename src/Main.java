@@ -214,6 +214,8 @@ public class Main {
         return str;
     }
 
+    //Decompress the stringbuilder, assuming the format follows number then letter, by taking all numbers and all letters in order through designated arrays, should have exactly one number per letter
+    //Then, adds [letter] to the final decompressed string [number] times
     public static StringBuilder decompress(StringBuilder compressedString) throws InterruptedException{
         StringBuilder decompressedString = new StringBuilder();
 
@@ -246,6 +248,7 @@ public class Main {
         return decompressedString;
     }
 
+    //Execute the decompression steps
     public static void doDecompression() throws InterruptedException {
         sanitise("uncompressed.txt");
         sleep(1000);
